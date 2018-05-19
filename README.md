@@ -9,7 +9,7 @@ Vim will be installed:
 salt-call grains.append roles linux.packages.editors.vim
 ```
 
-emacs, gedit, nano, and vim will be installed:
+Emacs, gedit, nano, and vim will be installed:
 ```
 salt-call grains.append roles linux.packages.editors
 ```
@@ -22,6 +22,14 @@ salt-call grains.append roles linux.packages.editors
               * init (installs all below)
               * server
               * agent
+      * communications
+          * postfix
+                 * init (includes server only)
+              * server
+      * connectivity
+          * ssh
+              * init (includes server only)
+              * server
       * databases
           * mysql
               * init (installs all below)
@@ -35,10 +43,13 @@ salt-call grains.append roles linux.packages.editors
           * vim
       * languages
           * python
+      * source-control
+          * gitlab
       * web-servers
           * apache
   * repositories
       * epel
+      * gitlab
       * zabbix
 
 
