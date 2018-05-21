@@ -69,6 +69,24 @@ salt-call grains.append roles linux.packages.editors
   <dd>Installs gedit</dd>
 </dl>
 
+### git
+<table>
+    <tr>
+        <th>URL</th>
+        <td>
+            <a href='https://git-scm.com'>https://git-scm.com</a>
+        </td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td>Source control tool</td>
+    </tr>
+</table>
+<dl>
+  <dt>linux.packages.source-control.git</dt>
+  <dd>Installs git client</dd>
+</dl>
+
 ### GitLab
 <table>
     <tr>
@@ -87,6 +105,42 @@ salt-call grains.append roles linux.packages.editors
   <dd>Installs GitLab (CE) (CentOS 7)</dd>
   <dt>linux.repositories.gitlab</dt>
   <dd>Installs GitLab (CE) repo (CentOS 7)</dd>
+</dl>
+
+### GNOME
+<table>
+    <tr>
+        <th>URL</th>
+        <td>
+            <a href='https://www.gnome.org'>https://www.gnome.org</a>
+        </td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td>Desktop environment</td>
+    </tr>
+</table>
+<dl>
+  <dt>linux.packages.desktop-environments.gnome</dt>
+  <dd>Installs GNOME (CentOS 7)</dd>
+</dl>
+
+### htop
+<table>
+    <tr>
+        <th>URL</th>
+        <td>
+            <a href='https://hisham.hm/htop/'>https://hisham.hm/htop/</a>
+        </td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td>A better version of top</td>
+    </tr>
+</table>
+<dl>
+  <dt>linux.packages.stats.htop</dt>
+  <dd>Installs htop</dd>
 </dl>
 
 ### MySQL
